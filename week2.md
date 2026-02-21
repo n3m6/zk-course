@@ -4,7 +4,7 @@
 
 #### Day 9-10
 
-- 2.1 Bilinear Pairings (conceptual)
+- [2.1 Bilinear Pairings (conceptual)](https://rareskills.io/post/bilinear-pairing)
 
 Goals: 
 
@@ -15,7 +15,7 @@ Goals:
 
 #### Day 11-12
 
-- 2.2 Algebraic Circuits → R1CS
+- [2.2 Algebraic Circuits → R1CS](https://rareskills.io/post/rank-1-constraint-system)
 
 Goals:
 
@@ -26,7 +26,7 @@ Goals:
 
 #### Days 13-14
 
-- 2.3 Building a ZK Proof from R1CS | 
+- [2.3 Building a ZK Proof from R1CS](https://rareskills.io/post/r1cs-zkp)
 
 Goals:
 
@@ -37,7 +37,7 @@ Goals:
 
 #### Day 15-16
 
-- 2.4 Lagrange Interpolation | 
+- [2.4 Lagrange Interpolation](https://rareskills.io/post/python-lagrange-interpolation)
 
 Goals: 
 
