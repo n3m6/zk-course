@@ -5,7 +5,7 @@
 
 #### Day 25-26 
 
-- 2.10 Groth16 Explained (first read)
+- [2.10 Groth16 Explained (first read)](https://rareskills.io/post/groth16)
 
 Goals:
 
@@ -15,7 +15,7 @@ Goals:
 
 #### Day 27-28 
 
-- Groth16 Deep Dive (re-read with code)
+- [Groth16 Deep Dive (re-read with code)](https://rareskills.io/post/groth16)
 
 Goals:
 
