@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL",
   "packageManager": "pnpm@10.15.1",
   "pnpm": {
     "onlyBuiltDependencies": ["esbuild"]
