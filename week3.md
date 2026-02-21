@@ -4,7 +4,7 @@
 
 #### Day 17-18
 
-- 2.5 Schwartz-Zippel Lemma 
+- [2.5 Schwartz-Zippel Lemma](https://rareskills.io/post/schwartz-zippel-lemma) 
 
 Goals:
 
@@ -14,8 +14,8 @@ Goals:
 
 #### Day 19-20
 
-- 2.6 Quadratic Arithmetic Programs 
-- 2.7 R1CS → QAP in Python 
+- [2.6 Quadratic Arithmetic Programs](https://rareskills.io/post/quadratic-arithmetic-program) 
+- [2.7 R1CS → QAP in Python](https://rareskills.io/post/r1cs-to-qap) 
 
 Goals:
 
@@ -26,7 +26,7 @@ Goals:
 
 #### Day 21-22
 
-- 2.8 Trusted Setup (conceptual) 
+- [2.8 Trusted Setup (conceptual)](https://rareskills.io/post/trusted-setup) 
 
 Goals:
 
@@ -37,7 +37,7 @@ Goals:
 
 #### Day 23-24
 
-- 2.9 Evaluating QAP on Trusted Setup
+- [2.9 Evaluating QAP on Trusted Setup](https://rareskills.io/post/elliptic-curve-qap)
 
 Goals: 
 
