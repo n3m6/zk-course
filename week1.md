@@ -4,8 +4,8 @@
 
 #### Day 1-2
 
-- 1.1 P vs NP & applications 
-- 1.2 Arithmetic Circuits
+- [1.1 P vs NP & applications](https://rareskills.io/post/p-vs-np) 
+- [1.2 Arithmetic Circuits](https://rareskills.io/post/arithmetic-circuit)
 
 Goals:
 
@@ -14,7 +14,7 @@ Goals:
 
 #### Day 3-4
 
-- 1.3 Finite Fields & Modular Arithmetic
+- [1.3 Finite Fields & Modular Arithmetic](https://rareskills.io/post/finite-fields)
 
 Goals: 
 
@@ -24,9 +24,9 @@ Goals:
 
 #### Day 5-6
 
-- 1.4 Set Theory 
-- 1.5 Abstract Algebra (intro) 
-- 1.6 Group Theory
+- [1.4 Set Theory](https://rareskills.io/post/set-theory) 
+- [1.5 Abstract Algebra (intro)](https://rareskills.io/post/abstract-algebra) 
+- [1.6 Group Theory](https://rareskills.io/post/group-theory)
 
 Goals:
 
@@ -35,9 +35,9 @@ Goals:
 
 #### Day 7-8
 
-- 1.7 Homomorphisms 
-- 1.8 Elliptic Curve Point Addition 
-- 1.9 Elliptic Curves over Finite Fields
+- [1.7 Homomorphisms](https://rareskills.io/post/homomorphisms) 
+- [1.8 Elliptic Curve Point Addition](https://rareskills.io/post/elliptic-curve-addition) 
+- [1.9 Elliptic Curves over Finite Fields](https://rareskills.io/post/elliptic-curves-finite-fields)
 
 Goals: 
 
