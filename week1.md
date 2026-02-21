@@ -1,23 +1,47 @@
+### **Week 1: Mathematical Foundations (Module 1)**
 
-### **Week 1: Finite Fields & Polynomials in TypeScript**
+**Goal:** Implement finite fields, groups, and elliptic curve basics in TypeScript.
 
-**Goal:** Implement a prime field and basic polynomial operations using native `BigInt`.
+#### Day 1-2
 
-*   **Math Focus:** Chapters 1–3 of the RareSkills book.
-*   **TypeScript Tasks:**
-    1.  **Finite Field Class:** Create a `class PrimeField` that stores a prime `p` (as `bigint`) and provides methods:
-        *   `add(a: bigint, b: bigint): bigint`
-        *   `sub(a: bigint, b: bigint): bigint`
-        *   `mul(a: bigint, b: bigint): bigint`
-        *   `inv(a: bigint): bigint` (using Fermat’s little theorem or extended Euclidean algorithm)
-        *   `exp(base: bigint, exponent: bigint): bigint`
-        *   Test with a small prime like `7n` or `13n`.
-    2.  **Polynomial Class:** Implement a `class Polynomial` that stores coefficients as `bigint[]` in a given field.
-        *   Methods: `evaluate(x: bigint)`, `add(Polynomial)`, `multiply(Polynomial)`, `degree()`.
-        *   Write a function to find roots by brute force for tiny fields (to internalize the product-of-roots property).
-    3.  **Lagrange Interpolation (preview):** Implement a simple `lagrange(points: {x: bigint, y: bigint}[])` function that returns the unique polynomial of degree ≤ n-1. This will be crucial for QAPs later.
+- 1.1 P vs NP & applications 
+- 1.2 Arithmetic Circuits
 
-*   **Recommended TypeScript Setup:**
-    *   Use Node.js with `ts-node` or `bun` for fast iteration.
-    *   Enable `"target": "es2020"` in `tsconfig.json` for `BigInt` support.
-    *   Write tests using `vitest` or `jest` to verify properties (e.g., `(a+b)*c == a*c + b*c` in the field).
+Goals:
+
+- Write a blog-post-style explanation of P vs NP in your own words 
+- Design a simple arithmetic circuit for `a² + b = c` (draw it, then represent as a data structure)
+
+#### Day 3-4
+
+- 1.3 Finite Fields & Modular Arithmetic
+
+Goals: 
+
+- **Enhance your `PrimeField` class** from my previous plan with full arithmetic 
+- Implement Fermat's Little Theorem for inverses 
+- Add a square root method (Tonelli-Shanks for primes ≡ 1 mod 4) 
+
+#### Day 5-6
+
+- 1.4 Set Theory 
+- 1.5 Abstract Algebra (intro) 
+- 1.6 Group Theory
+
+Goals:
+
+- Create a `Group` interface and implement `CyclicGroup` 
+- Test with multiplicative groups of finite fields • Prove Lagrange's theorem by brute force for small groups 
+
+#### Day 7-8
+
+- 1.7 Homomorphisms 
+- 1.8 Elliptic Curve Point Addition 
+- 1.9 Elliptic Curves over Finite Fields
+
+Goals: 
+
+- Implement a simple Weierstrass curve `y² = x³ + ax + b` over a small field 
+- Code point addition, doubling, and scalar multiplication 
+- **Use `@noble/curves` to verify your implementation** against known test vectors 
+

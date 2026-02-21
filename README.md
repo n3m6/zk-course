@@ -12,6 +12,25 @@ The goal is **functional understanding**, not production-ready code. By the end,
 
 If you hit a roadblock, the RareSkills book has a community Discord where you can ask questions. Also, the student implementations referenced (like the five-part series) may have code in other languages, but the logic translates directly to TypeScript.
 
+### Course Plan
+
+- [Week 1](week1.md)
+- [Week 2](week2.md)
+- [Week 3](week3.md)
+- [Week 4](week4.md)
+
+
+## 🛠️ TypeScript Libraries You'll Use
+
+| Library | Purpose | When |
+| :--- | :--- | :--- |
+| **None (pure TS)** | Field arithmetic, polynomials, R1CS | Weeks 1-3 |
+| `@noble/curves` | Elliptic curves, pairings (BLS12-381) | Weeks 2-4 |
+| `ffjavascript` (optional) | If you need faster field ops | Optional |
+| `vitest` / `jest` | Testing all components | Throughout |
+
+
+
 *   **Recommended TypeScript Setup:**
     *   Use Node.js with `ts-node` or `bun` for fast iteration.
     *   Enable `"target": "es2020"` in `tsconfig.json` for `BigInt` support.
@@ -25,9 +44,27 @@ If you hit a roadblock, the RareSkills book has a community Discord where you ca
 *   **Testing:** Write property-based tests (e.g., using `fast-check`) to verify field axioms and polynomial identities.
 *   **Debugging:** Use `console.log` liberally and compare intermediate values with known examples from the RareSkills book (they often provide numerical examples).
 
-### Course Plan
 
-- [Week 1](week1.md)
-- [Week 2](week2.md)
-- [Week 3](week3.md)
-- [Week 4](week4.md)
+---
+
+## 📈 Success Criteria
+
+By the end of Week 4, you should have:
+
+1.  **A GitHub repository** with clean TypeScript code implementing each component
+2.  **Working finite field and polynomial arithmetic** from scratch
+3.  **An R1CS generator and verifier** for simple circuits
+4.  **A QAP converter** using Lagrange interpolation
+5.  **A complete Groth16 prover/verifier** (using `@noble/curves` for pairings) that can handle a toy circuit like `a*b = c`
+6.  **Tests** that verify correctness and catch invalid proofs
+
+---
+
+## 💡 If You Have Extra Time
+
+If you finish early or want deeper understanding:
+
+*   **Module 3 (Circom)**: Implement your toy circuit in Circom to see how real ZK circuits are written
+*   **Module 5 (NTT)**: Optimize your polynomial multiplication using NTT
+
+

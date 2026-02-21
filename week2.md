@@ -1,14 +1,47 @@
+### **Week 2: From Circuits to R1CS (Module 2, Part 1)**
 
-### **Week 2: Arithmetic Circuits & R1CS**
+**Goal:** Convert arithmetic circuits to Rank-1 Constraint Systems.
 
-**Goal:** Translate a simple computation into an arithmetic circuit and then into a Rank-1 Constraint System (R1CS).
+#### Day 9-10
 
-*   **Math Focus:** Chapters 4–5 and R1CS sections.
-*   **TypeScript Tasks:**
-    1.  **Circuit Representation:** Define TypeScript interfaces for a circuit with `wires`, `gates` (addition/multiplication). For a simple function like `out = (a*b) + c`, manually create the wire indices.
-    2.  **R1CS Generator:** Write a function `circuitToR1CS(circuit)` that outputs three matrices (A, B, C) representing the constraints. For each multiplication gate `(left * right = out)`, generate a row where A has a `1` at left wire, B has `1` at right wire, C has `1` at out wire. For addition, you can rewrite as multiplication with a constant `1` or handle separately.
-        *   Represent matrices as `Array<Map<number, bigint>>` (sparse) or dense `bigint[][]` for tiny circuits.
-    3.  **Witness Generator:** Write a function that takes inputs and computes all intermediate wire values, producing a full witness vector `w`.
-    4.  **Verification:** Write a function `checkR1CS(A, B, C, w)` that asserts `(A·w) * (B·w) == (C·w)` element-wise (using your field class).
+- 2.1 Bilinear Pairings (conceptual)
 
-*   **Test Case:** Use `a=3, b=4, c=5` → `out=17`. Your R1CS should have at least two constraints: one for multiplication, one for addition (or combine using a dummy multiplication by 1). Verify that your witness satisfies all constraints.
+Goals: 
+
+- Read the chapter thoroughly 
+- Experiment with `@noble/curves/bls12-381` to compute pairings
+- Verify `e(a·G1, b·G2) = e(G1, G2)^{a·b}` with random scalars 
+
+
+#### Day 11-12
+
+- 2.2 Algebraic Circuits → R1CS
+
+Goals:
+
+- Create a `Circuit` class that stores gates 
+- Write a `flatten` method that generates constraints 
+- Implement for `out = (a*b) + (c*d)` (4 wires, 2 multiplication gates) 
+
+
+#### Days 13-14
+
+- 2.3 Building a ZK Proof from R1CS | 
+
+Goals:
+
+- Implement witness generation for your circuit 
+- Write an R1CS verifier that checks `Az * Bz = Cz` 
+- Test with valid and invalid witnesses 
+
+
+#### Day 15-16
+
+- 2.4 Lagrange Interpolation | 
+
+Goals: 
+
+- **Revisit your Week 1 polynomial code** 
+- Add proper Lagrange interpolation at arbitrary points 
+- Test with small polynomials and verify by evaluation 
+

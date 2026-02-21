@@ -1,15 +1,46 @@
+### **Week 3: Quadratic Arithmetic Programs (Module 2, Part 2)**
 
-### **Week 3: Quadratic Arithmetic Programs (QAP) & Elliptic Curve Pairings (Conceptual)**
+**Goal:** Transform R1CS into QAP polynomials.
 
-**Goal:** Transform R1CS into polynomial equations (QAP) and understand the role of pairings.
+#### Day 17-18
 
-*   **Math Focus:** QAP construction and pairings overview.
-*   **TypeScript Tasks:**
-    1.  **QAP from R1CS:** Implement a function `r1csToQAP(A, B, C, field, t)` where `t` is a set of evaluation points (typically `[1,2,3,...]`). For each matrix column, use Lagrange interpolation to create polynomials `A_i(x)`, `B_i(x)`, `C_i(x)`.
-        *   This involves building a `Polynomial` for each column. Your `lagrange` function from Week 1 will be used repeatedly.
-    2.  **Target Polynomial:** Construct `Z(x) = (x-1)(x-2)...(x-n)` for `n` constraints.
-    3.  **Check Divisibility:** For a valid witness `w`, compute `P(x) = (Σ w_i A_i(x)) * (Σ w_i B_i(x)) - Σ w_i C_i(x)`. Verify that `P(x)` is divisible by `Z(x)` (i.e., polynomial division remainder zero). This is the core of the QAP.
-        *   Implement polynomial division (or evaluation at all `t` points to check zeroes).
-    4.  **Elliptic Curves & Pairings (Conceptual):** Read the RareSkills chapter on pairings. Do **not** implement pairings from scratch. Instead, get familiar with a TypeScript library that provides them:
-        *   `@noble/curves` (specifically `bls12-381`) offers a clean API for group operations and pairings.
-        *   Experiment: Create random group elements and compute `pairing(G1_point, G2_point)`. Verify bilinearity with simple examples (e.g., `e(a*G1, b*G2) == e(G1, G2)^{ab}`).
+- 2.5 Schwartz-Zippel Lemma 
+
+Goals:
+
+- Understand why polynomials are good for ZK 
+- Implement a simple test: generate two random unequal polynomials, evaluate at random points, see how often they collide 
+
+
+#### Day 19-20
+
+- 2.6 Quadratic Arithmetic Programs 
+- 2.7 R1CS → QAP in Python 
+
+Goals:
+
+- **Port the Python examples to TypeScript** 
+- Write `r1csToQAP` that takes A, B, C matrices and returns column polynomials 
+- Use your Lagrange interpolation from Week 2 
+
+
+#### Day 21-22
+
+- 2.8 Trusted Setup (conceptual) 
+
+Goals:
+
+- Understand the purpose of toxic waste 
+- Simulate a trusted setup by generating random α, β, γ, δ, τ in your field 
+- Store these as your "toxic waste" (for learning only!) 
+
+
+#### Day 23-24
+
+- 2.9 Evaluating QAP on Trusted Setup
+
+Goals: 
+
+- Implement polynomial evaluation at τ using Horner's method 
+- Compute the three QAP polynomials: `A(τ)`, `B(τ)`, `C(τ)` 
+- Verify that `A(τ)*B(τ) - C(τ)` is divisible by the target polynomial 
