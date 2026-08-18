@@ -9,7 +9,7 @@
 Goals:
 
 - Understand why polynomials are good for ZK 
-- Implement a simple test: generate two random unequal polynomials, evaluate at random points, see how often they collide 
+- Implement a simple test with a **large** prime field: generate two random unequal polynomials of degree `d`, evaluate at many random points, and confirm the collision rate is near `d / |F|`. (Don't use your small Week 1 fields for the probability claim — with `p = 11`, a degree-2 difference collides ~18% of the time.)
 
 
 #### Day 19-20
@@ -31,8 +31,8 @@ Goals:
 Goals:
 
 - Understand the purpose of toxic waste 
-- Simulate a trusted setup by generating random α, β, γ, δ, τ in your field 
-- Store these as your "toxic waste" (for learning only!) 
+- Simulate the chapter's **powers-of-tau** setup: pick a random `τ`, create the string of powers `[τ⁰, τ¹, ..., τⁿ]`, then simulate a second participant multiplying every element by their own random secret and "deleting" both secrets 
+- Keep α, β, γ, δ for Week 4 — they belong to the Groth16 setup in chapter 2.10, not to this chapter (the γ in this chapter is a generic participant contribution, not Groth16's γ)
 
 
 #### Day 23-24
@@ -41,6 +41,6 @@ Goals:
 
 Goals: 
 
-- Implement polynomial evaluation at τ using Horner's method 
-- Compute the three QAP polynomials: `A(τ)`, `B(τ)`, `C(τ)` 
-- Verify that `A(τ)*B(τ) - C(τ)` is divisible by the target polynomial 
+- Implement polynomial evaluation at τ using Horner's method (or the chapter's inner product with powers-of-tau points — both are fine) 
+- Compute `U(τ) = Σ aᵢuᵢ(τ)`, `V(τ) = Σ aᵢvᵢ(τ)`, and `W(τ) = Σ aᵢwᵢ(τ)` 
+- Compute the quotient `h(x) = (U(x)V(x) − W(x)) / t(x)` by polynomial division (evaluating at one point τ alone does **not** prove divisibility) and check the QAP equation `U·V == W + h·t` holds over the field

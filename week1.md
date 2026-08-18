@@ -18,9 +18,9 @@ Goals:
 
 Goals: 
 
-- **Enhance your `PrimeField` class** from my previous plan with full arithmetic 
-- Implement Fermat's Little Theorem for inverses 
-- Add a square root method (Tonelli-Shanks for primes ≡ 1 mod 4) 
+- Create (or enhance) your `PrimeField` class with full arithmetic: `add`, `sub`, `mul`, `div`, `inv`, `pow`, equality, and normalization 
+- Implement modular exponentiation and use Fermat's Little Theorem to compute inverses as `a^(p-2) mod p` (the chapter's method; also implement `extendedGCD` later) 
+- Add modular square roots exactly as the chapter describes: for primes `p ≡ 3 (mod 4)` use `a^((p+1)/4) mod p`; for primes `p ≡ 1 (mod 4)` implement Tonelli-Shanks (the chapter says the simple formula only works for `p = 4k + 3`)
 
 #### Day 5-6
 
@@ -31,7 +31,8 @@ Goals:
 Goals:
 
 - Create a `Group` interface and implement `CyclicGroup` 
-- Test with multiplicative groups of finite fields • Prove Lagrange's theorem by brute force for small groups 
+- Test with multiplicative groups of finite fields 
+- *Optional extra material:* verify Lagrange's theorem by exhaustive search on small groups (the chapter covers cyclic groups and group order but does not teach Lagrange's theorem — you cannot "prove" it by brute force, only check examples)
 
 #### Day 7-8
 
@@ -43,5 +44,5 @@ Goals:
 
 - Implement a simple Weierstrass curve `y² = x³ + ax + b` over a small field 
 - Code point addition, doubling, and scalar multiplication 
-- **Use `@noble/curves` to verify your implementation** against known test vectors 
+- Verify against the chapter's hand-computed points on `y² = x³ + 3 (mod 11)` and group-law tests (`P + O == P`, `nP == O`, `P + Q == Q + P`). Note: `@noble/curves` ships standard curves (secp256k1, BLS12-381, etc.) and does not directly expose your arbitrary small-field curve, so it is not a drop-in test-vector source here; you'll use `@noble/curves` for pairings starting in Week 2
 

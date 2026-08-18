@@ -1,8 +1,9 @@
 {
   "name": "zk-course",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "4-week TypeScript study plan for implementing Groth16 from scratch",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
@@ -13,10 +14,8 @@
   "author": "",
   "license": "GPL",
   "packageManager": "pnpm@10.15.1",
-  "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
-  },
   "devDependencies": {
+    "@noble/curves": "1.9.1",
     "@types/node": "25.3.0",
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
