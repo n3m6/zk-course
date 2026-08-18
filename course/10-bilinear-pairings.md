@@ -168,7 +168,7 @@ A field extension is a very abstract concept, and frankly, the relationship betw
 
 Just think of it this way:
 
-![Math meme about field extensions](https://static.wixstatic.com/media/935a00_19c62a78929f4cb28ee0e42a14e8ff85~mv2.png/v1/fill/w_861,h_574,al_c,lg_1,q_90,enc_auto/935a00_19c62a78929f4cb28ee0e42a14e8ff85~mv2.png)
+![Math meme about field extensions](./images/935a00_19c62a78929f4cb28ee0e42a14e8ff85_mv2.png)
 
 An elliptic curve in $ G_2 $ is an elliptic curve where both the $ x $ and $ y $ element are two dimensional objects.
 
@@ -398,7 +398,7 @@ It’s not just Groth16, most zk algorithm have verification formula that looks 
 
 If we look at the verification code of [Tornado Cash](https://www.rareskills.io/post/how-does-tornado-cash-work), we can see it is exactly implementing this (even the Greek letters match, but don’t worry if you don’t understand it yet). The $\beta_2 $ simply means it is a $\mathbb{G}_2 $ point, $\alpha_1 $ means $\mathbb{G}_1 $ point, etc.
 
-![annotation of the verification code in Tornado Cash](https://static.wixstatic.com/media/935a00_63f7afa2360e49a09139ed2de90189fc~mv2.png/v1/fill/w_1480,h_246,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/935a00_63f7afa2360e49a09139ed2de90189fc~mv2.png)
+![annotation of the verification code in Tornado Cash](./images/935a00_63f7afa2360e49a09139ed2de90189fc_mv2.png)
 
 Inside the pairing function is where the call to `address(8)` is done to complete the pairing calculation and determine if the proof if valid or not.
 

@@ -195,7 +195,7 @@ to enforce that each territory has exactly one color. The constraint above can o
 
 **3-Coloring Australia**
 
-![3 coloring of Australia](https://static.wixstatic.com/media/706568_b649d43396ef43cd954f4beb61dc1bc6~mv2.jpg/v1/fill/w_696,h_628,al_c,lg_1,q_85,enc_auto/706568_b649d43396ef43cd954f4beb61dc1bc6~mv2.jpg)
+![3 coloring of Australia](./images/706568_b649d43396ef43cd954f4beb61dc1bc6_mv2.jpg)
 
 Recall that Australia has six territories:
 

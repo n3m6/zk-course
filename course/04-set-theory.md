@@ -89,7 +89,7 @@ Because “integers as a set” and “real numbers as a set” are used so freq
 
 Sometimes people write $\mathbb{R}^2 $ as a vector of two real numbers, so $ a \in \mathbb{R}^2 $ means $ a $ is a 2D vector. I recommend writing it the second way because it is more concise, and also makes you look smarter.
 
-![Math meme about 2D vectors of real numbers](https://static.wixstatic.com/media/935a00_9815078a1a9d44b0ae354484a71d8052~mv2.png/v1/fill/w_829,h_600,al_c,lg_1,q_90,enc_auto/935a00_9815078a1a9d44b0ae354484a71d8052~mv2.png)
+![Math meme about 2D vectors of real numbers](./images/935a00_9815078a1a9d44b0ae354484a71d8052_mv2.png)
 
 ## Ordered pairs
 

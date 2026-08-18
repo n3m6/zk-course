@@ -9,7 +9,7 @@ It’s easy to visualize smooth elliptic curves, but what do elliptic curves ove
 
 The following is a plot of $ y² = x³ + 3 \pmod {23}$
 
-![Plot of y² = x³ + 3 mod 23](https://cdn.rareskills.io/github-images/6fda3fba3cee568a-935a00_9b8594bdeb9b4eb580847f1d5ffcd6c0_mv2.png)
+![Plot of y² = x³ + 3 mod 23](./images/6fda3fba3cee568a-935a00_9b8594bdeb9b4eb580847f1d5ffcd6c0_mv2.png)
 
 Because we only allow integer inputs (more specifically, finite field elements), we are not going to obtain a smooth plot.
 
@@ -21,9 +21,9 @@ Code to generate this plot will be provided later.
 
 Here are some plots of $ y² = x³ + 3 $ done over modulo 11, 23, 31, and 41 respectively. The higher the modulus, the more points it holds, and the more complex the plot appears to be.
 
-![Plot of elliptic curves modulo 11, 23](https://cdn.rareskills.io/github-images/72a8cb84a2f1330d-935a00_e592040ff7174e81a1f32ed7ed70a150_mv2.png)
+![Plot of elliptic curves modulo 11, 23](./images/72a8cb84a2f1330d-935a00_e592040ff7174e81a1f32ed7ed70a150_mv2.png)
 
-![Plot of elliptic curves modulo 23, 31](https://cdn.rareskills.io/github-images/bb920d64ceef4b38-935a00_382bd8455deb45efba13fdb7d77517b4_mv2.png)
+![Plot of elliptic curves modulo 23, 31](./images/bb920d64ceef4b38-935a00_382bd8455deb45efba13fdb7d77517b4_mv2.png)
 
 We established in the previous article that elliptic curve points with the “connect and flip” operation are a group. When we do this over a finite field, it remains a group, but it becomes a cyclic group, which is tremendously useful for our application. Why it is cyclic unfortunately will require some very involved math, so you’ll just have to accept that for now. But this should not be too surprising. We have a finite number of points, so generating each point by carrying out $(x + 1)G, (x + 2)G, … (x + \text{order} - 1)G $ should at least seem plausible.
 
@@ -168,7 +168,7 @@ plt.plot();
 
 The result of the plot is shown below:
 
-![Plot of y² = x³ + 3 (mod 11)](https://cdn.rareskills.io/github-images/07fc4e2b0141e446-935a00_2355ae79d450498eb3ee5b6721634b43_mv2.png)
+![Plot of y² = x³ + 3 (mod 11)](./images/07fc4e2b0141e446-935a00_2355ae79d450498eb3ee5b6721634b43_mv2.png)
 
 Some observations:
 
@@ -212,7 +212,7 @@ def add_points(xq, yq, xp, yp, p, a=0):
 
 Here are some visualizations of what “connect and flip” looks like in a finite field:
 
-![examples of EC addition in a finite field](https://cdn.rareskills.io/github-images/d3e4b5831fbdd92b-elliptic-curve-finite-fields-example.jpg)
+![examples of EC addition in a finite field](./images/d3e4b5831fbdd92b-elliptic-curve-finite-fields-example.jpg)
 
 ## Every elliptic curve point in a cyclic group has a “number”
 
@@ -279,7 +279,7 @@ for i in range(0, 11):
 
 The red text can be thought of as starting with the identity element, and how many times we added the generator to it.
 
-![plot of y^2 = x^3 + 3 (mod 11) with the points numbered](https://cdn.rareskills.io/github-images/717064d59e1ade64-935a00_3e9b90d38e9c4c4a82b34d138fa9f49c_mv2.png)
+![plot of y^2 = x^3 + 3 (mod 11) with the points numbered](./images/717064d59e1ade64-935a00_3e9b90d38e9c4c4a82b34d138fa9f49c_mv2.png)
 
 ### Point inverses are still vertically symmetric
 
@@ -297,7 +297,7 @@ However, if we pick our parameters for the curve carefully, we can create an ell
 
 For example, $ y^2 = x^3 + 7 \pmod {43}$ creates a curve with 31 points total as can be seen in the plot below:
 
-![elliptic curve with 31 points](https://cdn.rareskills.io/github-images/2f75227da663c811-elliptic-curve-finitie-order-31.jpg)
+![elliptic curve with 31 points](./images/2f75227da663c811-elliptic-curve-finitie-order-31.jpg)
 
 When the order of the curve matches the order of the finite field **every operation you do in the finite field has a homomorphic equivalent in the elliptic curve**.
 
@@ -347,7 +347,7 @@ The number printed above is huge for a reason. We do not want attackers to be ab
 
 Here is a plot of the first 1000 points:
 
-![plot of first 1000 points of bn128](https://cdn.rareskills.io/github-images/21c5f3d3ed27b7b0-935a00_d9bd567f47c247f588061305dc97940e_mv2.png)
+![plot of first 1000 points of bn128](./images/21c5f3d3ed27b7b0-935a00_d9bd567f47c247f588061305dc97940e_mv2.png)
 
 And this is the code to generate the plot above:
 

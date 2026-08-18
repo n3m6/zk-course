@@ -76,7 +76,7 @@ Despite significant incentives for finding efficient solutions to these problems
 
 ##### PSPACE Example 1: Finding the optimal Chess move
 
-![Image of a chess board](https://static.wixstatic.com/media/935a00_71d5fe7538a847ccaef0c82b5bea6b57~mv2.jpeg/v1/fill/w_720,h_720,al_c,q_85,enc_auto/935a00_71d5fe7538a847ccaef0c82b5bea6b57~mv2.jpeg)
+![Image of a chess board](./images/935a00_71d5fe7538a847ccaef0c82b5bea6b57_mv2.jpeg)
 
 Suppose we ask a powerful computer, “Given this chess board with the pieces in this position, what is the optimal next move?”
 
@@ -122,9 +122,9 @@ Examples of problems in NP. These are explained in more detail below:
 
 In the game Sudoku, a player is given a $ 9 \times 9 $ grid with some numbers filled in. The goal is for the player to fill in the rest of the grid with numbers 1-9 such that no number occurs more than once in any row, column, or $ 3 \times 3 $ box (the ones outlined by bold lines). The following images from [Wikipedia](https://en.wikipedia.org/wiki/Sudoku) illustrate this. In the first image, we see the 9x9 grid as given to the player. In the second image, we see the player’s solution.
 
-![An incomplete sudoku puzzle](https://static.wixstatic.com/media/935a00_697037a2589d4091a95a9123d3796b4c~mv2.png/v1/fill/w_600,h_600,al_c,lg_1,q_85,enc_auto/935a00_697037a2589d4091a95a9123d3796b4c~mv2.png)
+![An incomplete sudoku puzzle](./images/935a00_697037a2589d4091a95a9123d3796b4c_mv2.png)
 
-![A completed sudoku puzzle](https://static.wixstatic.com/media/935a00_2b17812514524ee584f0d9e7c340c73f~mv2.png/v1/fill/w_600,h_600,al_c,lg_1,q_85,enc_auto/935a00_2b17812514524ee584f0d9e7c340c73f~mv2.png)
+![A completed sudoku puzzle](./images/935a00_2b17812514524ee584f0d9e7c340c73f_mv2.png)
 
 Given a Sudoku puzzle *solution*, we can quickly verify the solution is correct simply by looping over the columns, rows, and $ 3\times 3 $ subgrids. The witness can be verified in polynomial time.
 
@@ -134,7 +134,7 @@ However, *computing* the solution requires significantly more resources — ther
 
 Any 2D map of territories can be “colored” with just four colors (see the [four color theorem](https://en.wikipedia.org/wiki/Four_color_theorem)). That is, we can assign a unique color (one of four colors) to each territory such that no neighboring territories share the same color. For example, the following image (from [Wikipedia](https://en.wikipedia.org/wiki/U.S._state#/media/File:Map_of_USA_with_state_names_2.svg)) shows the United States colored with four colors: pink, green, yellow, and red. Take a moment to look at the verify that no two touching states have been given the same color:
 
-![A map of the United States colored with four colors](https://static.wixstatic.com/media/935a00_80bcbb69d39348819f674827b8c25691~mv2.png/v1/fill/w_400,h_246,al_c,lg_1,q_85,enc_auto/935a00_80bcbb69d39348819f674827b8c25691~mv2.png)
+![A map of the United States colored with four colors](./images/935a00_80bcbb69d39348819f674827b8c25691_mv2.png)
 
 The three-coloring problem asks whether a map can be colored using just three colors instead of four. Discovering a three-coloring (if it exists) is a computationally intensive search problem. However, verifying a *proposed* 3-coloring is easy: loop through each of the regions and check that no neighboring regions have the same color of the territory currently being checked.
 
@@ -142,13 +142,13 @@ It turns out that it is not possible to 3-color the United States.
 
 The reasons a particular map cannot be 3 colored vary, but in the case of the United States, Nevada (the red region in the map below) is surrounded by five territories. We color Nevada with one color, then we must alternate the colors of its neighboring territories. However, when we finish circling the neighbors of Nevada, we will end up with a territory having neighbors with three colors on its boundaries, leaving no valid color for the uncolored territory.
 
-![A map showing Nevada and the surrounding states](https://static.wixstatic.com/media/935a00_5ddfcf6c6b0f4920bdb3624fbab031d9~mv2.jpg/v1/fill/w_898,h_674,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/935a00_5ddfcf6c6b0f4920bdb3624fbab031d9~mv2.jpg)
+![A map showing Nevada and the surrounding states](./images/935a00_5ddfcf6c6b0f4920bdb3624fbab031d9_mv2.jpg)
 
 Here is a [quick and interesting video about 3-coloring maps](https://www.youtube.com/watch?v=WlcXoz6tn4g) if you want to learn more about this problem.
 
 However, it is possible to 3-color Australia:
 
-![A 3 Coloring of Australia](https://static.wixstatic.com/media/935a00_d8396ac3cd15406281b6c83deb2abc71~mv2.jpg/v1/fill/w_696,h_628,al_c,lg_1,q_85,enc_auto/935a00_d8396ac3cd15406281b6c83deb2abc71~mv2.jpg)
+![A 3 Coloring of Australia](./images/935a00_d8396ac3cd15406281b6c83deb2abc71_mv2.jpg)
 
 Not all maps can be three-colored. Computing a three-coloring for an arbitrary 2D map, if it exists, cannot be done efficiently — it typically requires a brute-force search that may take exponential time.
 
@@ -172,7 +172,7 @@ Any problem that requires exponential resources to verify the witness for is a P
 
 In other words, if you have a powerful enough computer to solve or verify a class of problem in the larger circle, you can solve or verify a subset of it:
 
-![Hierarchy of computation complexity classes](https://static.wixstatic.com/media/935a00_9a3130175f2945eb8ae7a4d975b36f55~mv2.jpg/v1/fill/w_1022,h_766,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/935a00_9a3130175f2945eb8ae7a4d975b36f55~mv2.jpg)
+![Hierarchy of computation complexity classes](./images/935a00_9a3130175f2945eb8ae7a4d975b36f55_mv2.jpg)
 
 ### The P vs NP problem
 
@@ -289,15 +289,15 @@ If $ P $ has a value of $ 1 $ at that bit and $ Q $ has a value of $ 0 $, then $
 
 The following animation illustrates the algorithm detecting that $ P ≥ Q $:
 
-![Algorithm to test if P is greater or equal to Q](https://static.wixstatic.com/media/935a00_4dc4955706b54e778847f861f651e486~mv2.gif)
+![Algorithm to test if P is greater or equal to Q](./images/935a00_4dc4955706b54e778847f861f651e486_mv2.gif)
 
 If $ P = Q $, then all of the bits are equal. $ P = Q $ means $ P ≥ Q $ is also true:
 
-![Algorithm to test P = Q](https://static.wixstatic.com/media/935a00_186a696a8b14493a8d6cd17d7f7bfe0d~mv2.gif)
+![Algorithm to test P = Q](./images/935a00_186a696a8b14493a8d6cd17d7f7bfe0d_mv2.gif)
 
 If P < Q, then we will detect that on the first bit where Q is 1 and P is 0:
 
-![Detecting if P < Q](https://static.wixstatic.com/media/935a00_bba4e16f05d34184945faf33fd9a8c53~mv2.gif)
+![Detecting if P < Q](./images/935a00_bba4e16f05d34184945faf33fd9a8c53_mv2.gif)
 
 Suppose, without loss of generality, that we number the bits in $ P $ as $ p₄, p₃, p₂, p₁$ and the bits in $ Q $ as $ q₄, q₃, q₂, q₁$.
 
@@ -355,7 +355,7 @@ Thus, we see that a witness that proves a list is sorted does not have to be the
 
 Let’s look at our map of Australia again:
 
-![A 3 Coloring of Australia](https://static.wixstatic.com/media/935a00_d8396ac3cd15406281b6c83deb2abc71~mv2.jpg/v1/fill/w_696,h_628,al_c,lg_1,q_85,enc_auto/935a00_d8396ac3cd15406281b6c83deb2abc71~mv2.jpg)
+![A 3 Coloring of Australia](./images/935a00_d8396ac3cd15406281b6c83deb2abc71_mv2.jpg)
 
 To model the solution as a Boolean formula, the formula needs to encode the following facts:
 
@@ -416,7 +416,7 @@ We need to apply the color assignment constraint to each territory and the diffe
 
 We now show the final Boolean formula that verifies a valid 3 coloring for Australia. Here are the territories labelled:
 
-![3-coloring of Australia labelled with colors for the territories](https://static.wixstatic.com/media/935a00_824140c195b64b20bb5351d8d54464d8~mv2.jpg/v1/fill/w_696,h_629,al_c,lg_1,q_85,enc_auto/935a00_824140c195b64b20bb5351d8d54464d8~mv2.jpg)
+![3-coloring of Australia labelled with colors for the territories](./images/935a00_824140c195b64b20bb5351d8d54464d8_mv2.jpg)
 
 First, we assign each territory a variable name:
 

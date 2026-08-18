@@ -1191,7 +1191,7 @@ snarkjs r1cs print multiply2.r1cs
 
 We get the following output:
 
-![console result of Circom compilation](https://static.wixstatic.com/media/935a00_ce8574af090e4b4d8465fd45d7dda8ff~mv2.png/v1/fill/w_1480,h_496,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/935a00_ce8574af090e4b4d8465fd45d7dda8ff~mv2.png)
+![console result of Circom compilation](./images/935a00_ce8574af090e4b4d8465fd45d7dda8ff_mv2.png)
 
 This looks quite a bit different from our R1CS solution, but it is actually encoding the same information.
 
@@ -1248,7 +1248,7 @@ cat witness.json
 
 We get the following result:
 
-![terminal output after computing the witness](https://static.wixstatic.com/media/935a00_6ffb172a2e7649cab8cc6db8cace8de8~mv2.png/v1/fill/w_1428,h_316,al_c,lg_1,q_90,enc_auto/935a00_6ffb172a2e7649cab8cc6db8cace8de8~mv2.png)
+![terminal output after computing the witness](./images/935a00_6ffb172a2e7649cab8cc6db8cace8de8_mv2.png)
 
 It is clear that Circom is using the same column layout we have been using: `[1, out, x, y]`, as $ x $ was set to $ 11 $ and $ y $ to $ 9 $ in our `input.json`.
 
@@ -1281,7 +1281,7 @@ $$
 
 $\mathbf{L}$ has one coefficient of $-1 $ for $ x $, $\mathbf{R}$ has one coefficient of $+1 $ for $ y $, and $\mathbf{O}$ has $-1 $ for $\text{out}$. In modular form, this is identical to what the terminal outputted above:
 
-![terminal output of the R1CS](https://static.wixstatic.com/media/935a00_36651c70d5aa49d89059cbae553be7e9~mv2.png/v1/fill/w_1480,h_114,al_c,lg_1,q_85,enc_auto/935a00_36651c70d5aa49d89059cbae553be7e9~mv2.png)
+![terminal output of the R1CS](./images/935a00_36651c70d5aa49d89059cbae553be7e9_mv2.png)
 
 ### Checking the rest of our work
 
@@ -1325,7 +1325,7 @@ component main = Multiply4();
 
 With everything we’ve discussed so far, the Circom output and the annotations should be self-explanatory.
 
-![annotation of constraint generation for Multiply4()](https://static.wixstatic.com/media/935a00_21b46f6f9ffd4a80b1a2a374be0de279~mv2.png/v1/fill/w_990,h_420,al_c,q_90,enc_auto/935a00_21b46f6f9ffd4a80b1a2a374be0de279~mv2.png)
+![annotation of constraint generation for Multiply4()](./images/935a00_21b46f6f9ffd4a80b1a2a374be0de279_mv2.png)
 
 With that in mind, our other formulas should have constraints as follows:
 

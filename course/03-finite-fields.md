@@ -17,7 +17,7 @@ For example, if the prime number $ p $ is $ 7 $, then the elements in the finite
 
 Modulo calculates the remainder when dividing the number by the prime number. For example, if our modulo is 7, the number 12 is *congruent* to 5 i.e. $ 12 \pmod 7 = 5 $, and the number 14 is congruent to 0. Similarly, when we add two numbers, say 3 + 5, the resulting sum of 8 is congruent to 1 (8 mod 7 = 1). The animation below illustrates this:
 
-![Number line gif](https://cdn.rareskills.io/github-images/465d64e92a5afb85-706568_27817a32acf7429ca035667488ebce27_mv2.gif)
+![Number line gif](./images/465d64e92a5afb85-706568_27817a32acf7429ca035667488ebce27_mv2.gif)
 
 In Python, the calculation shown above can be computed as:
 
@@ -81,7 +81,7 @@ For example, if we have $ p = 5 $, the elements are $\set{0, 1, 2, 3, 4}$. There
 
 Any element plus $ p $ is the same element. For example, $(3 + 7) \pmod 7 = 3 $. Consider the examples in the following animation:
 
-![Number Line animation showing 3 + 7 = 3 (mod 7)](https://cdn.rareskills.io/github-images/0de2fa77544f0ba9-706568_bb147f17337d49788e9e74718b23dcd5_mv2.gif)
+![Number Line animation showing 3 + 7 = 3 (mod 7)](./images/0de2fa77544f0ba9-706568_bb147f17337d49788e9e74718b23dcd5_mv2.gif)
 
 ## Additive Inverse
 
@@ -107,7 +107,7 @@ Just like with real numbers:
 
 The general pattern for additive inverses in a finite field is that the elements in the first half of the finite field are the additive inverses of the elements in the second half, as show in the figure below. Zero is the exception since it is its own additive inverse. The numbers connected by the green line are each other’s additive inverse in the field $ p = 7 $:
 
-![Image showing the additive inverse relationship](https://cdn.rareskills.io/github-images/ec4b5739e4c9d24e-706568_b60115959b634536b3ddfc7b8461625b_mv2.jpg)
+![Image showing the additive inverse relationship](./images/ec4b5739e4c9d24e-706568_b60115959b634536b3ddfc7b8461625b_mv2.jpg)
 
 **Exercise:** Let’s say we pick a $ p \geq 3 $. Which, if any, non-zero values are their own additive inverse?
 
@@ -464,15 +464,15 @@ Linear systems of equations with real numbers either have:
 
 1. **No solution:** which means the two equations represent lines that are parallel in two dimensions, or never cross in three dimensions or higher
 
-![Parallel lines](https://cdn.rareskills.io/github-images/068076a541610004-706568_3c9b8369fd064afe93c2a7ac7816bbf7_mv2.gif)
+![Parallel lines](./images/068076a541610004-706568_3c9b8369fd064afe93c2a7ac7816bbf7_mv2.gif)
 
 1. **One solution** which means the lines intersect at one point
 
-![Intersecting lines](https://cdn.rareskills.io/github-images/cbbba7ed66cfd501-706568_140802e7d9534b448073e17ea95ff821_mv2.gif)
+![Intersecting lines](./images/cbbba7ed66cfd501-706568_140802e7d9534b448073e17ea95ff821_mv2.gif)
 
 1. **Infinite solutions:** if the two equations represent the same line, then there are infinitely many points of intersection, and the linear system of equations has an infinite number of solutions.
 
-![Two lines that are the same](https://cdn.rareskills.io/github-images/5d7effdd4f358062-706568_a16e84f93c44406486a5a1ee540f281c_mv2.gif)
+![Two lines that are the same](./images/5d7effdd4f358062-706568_a16e84f93c44406486a5a1ee540f281c_mv2.gif)
 
 Finite field systems of equations also have
 
@@ -498,7 +498,7 @@ $$
 6x+y=6
 $$
 
-![Two lines with a single intersection](https://cdn.rareskills.io/github-images/91daf15f686e4ef1-706568_26aa180e616f434ab16a76673e03b530_mv2.png)
+![Two lines with a single intersection](./images/91daf15f686e4ef1-706568_26aa180e616f434ab16a76673e03b530_mv2.png)
 
 It has one solution: $(1, 0)$ for real numbers, but over the finite field $ p = 11 $, it has 11 solutions: $\set{(0, 6), (1, 0), (2, 5), (3, 10), (4, 4), (5, 9), (6, 3), (7, 8), (8, 2), (9, 7), (10, 1)}$.
 
@@ -506,7 +506,7 @@ It has one solution: $(1, 0)$ for real numbers, but over the finite field $ p = 
 
 Below we plot the solutions to the systems of equation over the finite fields to illustrate both equations “intersect everywhere,” that is, have the same set of points that satisfy both equations:
 
-![Modular arithmetic plot of the same equations](https://cdn.rareskills.io/github-images/0739a003433266b9-706568_079fc534789a431cbe3e52bf0081012c_mv2.png)
+![Modular arithmetic plot of the same equations](./images/0739a003433266b9-706568_079fc534789a431cbe3e52bf0081012c_mv2.png)
 
 This might seem extremely counterintuitive — let’s see how it happens. If we solve the original equations:
 
@@ -542,13 +542,13 @@ $$
 7x+3y=2
 $$
 
-![A different plot over real numbers showing a single intersection](https://cdn.rareskills.io/github-images/00c7ba14a7f13178-706568_c194df52697f4010943ff4e927f206b6_mv2.png)
+![A different plot over real numbers showing a single intersection](./images/00c7ba14a7f13178-706568_c194df52697f4010943ff4e927f206b6_mv2.png)
 
 Clearly, this system of equations has an intersection point, but over a finite field it has no solution.
 
 Below we show the plot of the two equations in a finite field:
 
-![A plot in a finite field showing no intersection](https://cdn.rareskills.io/github-images/54a14ec919187dca-706568_a737888a0bbc4f4e88d4209b47d0911f_mv2.png)
+![A plot in a finite field showing no intersection](./images/54a14ec919187dca-706568_a737888a0bbc4f4e88d4209b47d0911f_mv2.png)
 
 **Exercise:** Write code to bruteforce every combination of `(x, y)` over `x = 0..10, y = 0..10` to verify the above system has no solution over the finite field of `p = 11`.
 
@@ -626,11 +626,11 @@ $$
 4x + 8y = 1
 $$
 
-![Two parallel lines](https://cdn.rareskills.io/github-images/0e0f660c2920a669-706568_90da5d94046042f28be6d681d4cb8dce_mv2.png)
+![Two parallel lines](./images/0e0f660c2920a669-706568_90da5d94046042f28be6d681d4cb8dce_mv2.png)
 
 However, over the finite field `p = 11`, it has 11 solutions: $\set{(0, 7), (1, 1), (2, 6), (3, 0), (4, 5), (5, 10), (6, 4), (7, 9), (8, 3), (9, 8), (10, 2)}$. Those solutions are plotted below:
 
-![Plot of overlapping lines in a finite field](https://cdn.rareskills.io/github-images/96f9639e932bf6fc-706568_f5d5e95e4b5340a496f3756d67626e15_mv2.png)
+![Plot of overlapping lines in a finite field](./images/96f9639e932bf6fc-706568_f5d5e95e4b5340a496f3756d67626e15_mv2.png)
 
 **Exercise:** Convert the two equations to their finite field representation and see they are the same.
 
@@ -666,13 +666,13 @@ Nevertheless, polynomials in finite fields share a lot of properties with polyno
 
 Let’s plot $ y = x² \pmod {17}$ as an example.
 
-![plot of x^2 mod 17](https://cdn.rareskills.io/github-images/9b21f3a6f1a2e49a-706568_3917656775e4477598b9afad9dea92d7_mv2.png)
+![plot of x^2 mod 17](./images/9b21f3a6f1a2e49a-706568_3917656775e4477598b9afad9dea92d7_mv2.png)
 
 The domain of $ x $ are the elements of the finite field, and the output (range) must be a member of the finite field as well. That is, note how all the $ x $ and $ y $ values lie in the interval of $[0,16]$. A polynomial over a finite field can only have $ x $ and $ y $ values less than $ p $.
 
 The equivalent of $ y = -x²$ in finite field $ p = 17 $ is $ y = 16x² \pmod {17}$ since 16 is the additive inverse of 1 in that finite field. The polynomial $ y = 16x² \pmod {17}$ is plotted below:
 
-![plot of y = 16x^2 mod 17](https://cdn.rareskills.io/github-images/99fd3ab6215f7a09-706568_983e1638b445495ebf2d99ab0d4f7027_mv2.png)
+![plot of y = 16x^2 mod 17](./images/99fd3ab6215f7a09-706568_983e1638b445495ebf2d99ab0d4f7027_mv2.png)
 
 ### Polynomials that do not have roots in real numbers may have roots in a finite field
 
@@ -680,7 +680,7 @@ Just like our examples above with linear systems of equations, one should not as
 
 Below, we plot $ y = x² + 1 $ in the finite field $ p = 17 $. In real numbers, $ y = x² + 1 $ has no real roots. But in a finite field, it has two roots at $ 4 $ and $ 13 $, marked in red dots below:
 
-![Plot of y = x^2 + 1 mod 17](https://cdn.rareskills.io/github-images/6f7f8d166c5be7db-706568_c1a9510ce859456d8a20fb705c35c604_mv2.png)
+![Plot of y = x^2 + 1 mod 17](./images/6f7f8d166c5be7db-706568_c1a9510ce859456d8a20fb705c35c604_mv2.png)
 
 Let’s now explain why $ y = x² + 1 $ does not have roots in real numbers but does have roots in the finite field $ p = 17 $. In the finite field $ p = 17 $, 17 is congruent to zero. So if we plug a value into $ x $ such that $ x² + 1 $ becomes $ 17 $, then the polynomial will output zero, not $ 17 $. We can solve $ x² + 1 = 17 $ for $ x² = 17 - 1 = 16 $. In a finite field of $ p = 17 $, $ x² = 16 $ has solutions $ 4 $ and $ 13 $. Therefore, $ y = x² + 1 $ has roots $ 4 $ and $ 13 $ in the finite field $ p = 17 $.
 
@@ -688,7 +688,7 @@ Let’s now explain why $ y = x² + 1 $ does not have roots in real numbers but 
 
 Consider the polynomial $ y = x² − 5 $. We can see it has roots at $\sqrt{5}$ and $-\sqrt{5}$. However, if we plot it over a finite field modulo 17, we can see it never crosses the x-axis:
 
-![Plot of y = x^2 + 5 (mod 17)](https://cdn.rareskills.io/github-images/e45653e96c8d2b5a-706568_a87f571b1af9454db2b27d4a9fd3d8f6_mv2.png)
+![Plot of y = x^2 + 5 (mod 17)](./images/e45653e96c8d2b5a-706568_a87f571b1af9454db2b27d4a9fd3d8f6_mv2.png)
 
 There are no roots because $\sqrt{5}$ cannot be represented in a finite field modulo 17. However, in the finite field $ p = 11 $, then there would be two roots because 5 has a modular square roots in the finite field of $ p = 11 $.
 

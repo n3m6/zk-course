@@ -21,7 +21,7 @@ $$
 
 Depending on what value of a and b you pick, you’ll get a curve that looks like some of the following:
 
-![Elliptic curves](https://cdn.rareskills.io/github-images/319c8b067e64cafe-935a00_26f928a28e2b424690c1e3df172f783a_mv2.png)
+![Elliptic curves](./images/319c8b067e64cafe-935a00_26f928a28e2b424690c1e3df172f783a_mv2.png)
 
 A point on an elliptic curve is an $(x, y)$ pair that satisfies $ y² = x³ + ax + b $ for a given $ a $ and $ b $.
 
@@ -84,7 +84,7 @@ To illustrate how lines intersect on elliptic curves, let’s draw a nearly vert
 
 We get the following set of plots.
 
-![Elliptic curve with a line drawn through it](https://cdn.rareskills.io/github-images/475d5b68cc8b239f-935a00_fe30b49a14b448b2a306925812e052f5_mv2.png)
+![Elliptic curve with a line drawn through it](./images/475d5b68cc8b239f-935a00_fe30b49a14b448b2a306925812e052f5_mv2.png)
 
 It turns out, even though it looks like the purple line ($ y = 10x $) is rising faster than the blue curve ($ y² = x³ + 10 $), they will always eventually intersect.
 
@@ -120,7 +120,7 @@ We glossed over a very important detail in the last section, because it really d
 
 In it’s current form, it has a bug if we add two points where the intersection happens in the middle.
 
-![3 point intersection through an elliptic curve](https://cdn.rareskills.io/github-images/32e55f9e84cf7428-935a00_cffa7b60afd8486f8cc2f97de8b07f17_mv2.png)
+![3 point intersection through an elliptic curve](./images/32e55f9e84cf7428-935a00_cffa7b60afd8486f8cc2f97de8b07f17_mv2.png)
 
 Using our definitions above, the following must be true
 
@@ -148,7 +148,7 @@ Thankfully, there is a way to rescue this. Just define point addition to be the 
 
 So the correct way to add elliptic curve points is represented graphically below
 
-![Elliptic curve point addition](https://cdn.rareskills.io/github-images/2141133f58b5db86-935a00_47a61dc12ed54c2b9a36415cceea5b54_mv2.png)
+![Elliptic curve point addition](./images/2141133f58b5db86-935a00_47a61dc12ed54c2b9a36415cceea5b54_mv2.png)
 
 ## Formula for Addition
 
@@ -198,7 +198,7 @@ y_q = (lambda_q*(x_u - x_q) - y_u)
 
 Here is a screenshot of running the above code in Jupyter notebook and pretty printing the output. The computer algebra system needs a bit of coaxing, but we can clearly see `x_q == x_p` and `y_q == y_p`.
 
-![Algebraically demonstrating commutativity and associativity](https://cdn.rareskills.io/github-images/d8ad01d530dbd288-935a00_fb8599e0572c4987b88525005917b394_mv2.png)
+![Algebraically demonstrating commutativity and associativity](./images/d8ad01d530dbd288-935a00_fb8599e0572c4987b88525005917b394_mv2.png)
 
 $ P = Q $ for all $(x_t, y_t)$ and $(x_u, y_u)$ values. We get a division by zero error if $ x_t = x_u $, but this means they are the same point and that is obviously commutative.
 
@@ -223,7 +223,7 @@ So adding a point to itself is simply taking the derivative at that point, getti
 
 The following image graphically demonstrates $ A ⊕ A = 2A $.
 
-![Point multiplication on an elliptic curve](https://cdn.rareskills.io/github-images/3d7d0adce4b00da9-935a00_61ed6a7a5ba14b53a95cf5c16e54f3f5_mv2.png)
+![Point multiplication on an elliptic curve](./images/3d7d0adce4b00da9-935a00_61ed6a7a5ba14b53a95cf5c16e54f3f5_mv2.png)
 
 ### Shortcut for point multiplication
 

@@ -60,7 +60,7 @@ A Monoid is a Semigroup with an identity element.
 
 Awww yes, this is the same Monoid from the “A monad is a monoid in the category of endofunctors.”
 
-![Math meme about monad tutorials](https://static.wixstatic.com/media/935a00_bd9a8814842b4359b63050555a1c1c95~mv2.png/v1/fill/w_500,h_991,al_c,q_90,enc_auto/935a00_bd9a8814842b4359b63050555a1c1c95~mv2.png)
+![Math meme about monad tutorials](./images/935a00_bd9a8814842b4359b63050555a1c1c95_mv2.png)
 
 If we look at the [monoid documentation](https://typelevel.org/cats/typeclasses/monoid.html) in the Cats library for Scala, we see these definitions explicitly:
 

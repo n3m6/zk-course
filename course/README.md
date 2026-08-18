@@ -5,6 +5,7 @@ This folder contains the RareSkills Book of Zero Knowledge chapters referenced b
 
 - Online book: <https://rareskills.io/zk-book>
 - Original chapter content: © RareSkills; these files are local study copies.
+- Chapter images are stored locally in [`images/`](./images/) and referenced from each Markdown file.
 
 ## Module 1 — Mathematical Foundations
 
